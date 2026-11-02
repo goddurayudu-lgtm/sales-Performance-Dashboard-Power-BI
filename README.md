@@ -1,49 +1,76 @@
 # Sales Performance Dashboard
 
-## Business scenario
-You are a Data Analyst at a retail company. The Sales Manager needs an interactive view of revenue, profit, order volume, product performance, regional results and sales representative performance.
+## Project Overview
+This project analyses retail sales data to understand business performance, revenue trends, profitability, product performance and regional sales.
 
-## Files
-- `sales_data.csv` — synthetic dataset (1,200 order records)
-- `sales_data_and_project_guide.xlsx` — dataset and project brief
-- `DAX_measures.txt` — core Power BI measures
-- `SQL_analysis_queries.sql` — example SQL analysis
+The objective is to create an interactive Power BI dashboard that helps business managers make data-driven decisions.
 
-## Build it in Power BI
-1. Open Power BI Desktop.
-2. Select **Get Data > Text/CSV** and import `sales_data.csv`.
-3. Check data types: Order_Date = Date; Discount and Profit Margin = Percentage; Revenue, Cost, Profit and Unit_Price = Decimal Number; Quantity = Whole Number.
-4. Rename the imported table to `Sales`.
-5. Create the DAX measures in `DAX_measures.txt`.
-6. Add slicers for Year, Region, Category and Sales_Rep.
+## Business Objectives
+- Monitor overall sales and revenue performance.
+- Identify the most profitable products and categories.
+- Compare sales performance across different regions.
+- Analyse monthly and yearly sales trends.
+- Evaluate individual sales representative performance.
+- Identify opportunities to improve profitability.
 
-## Suggested report layout
-### Page 1 — Executive Overview
-- KPI cards: Total Revenue, Total Profit, Total Orders, Profit Margin, Average Order Value
-- Line chart: Revenue by month
-- Bar chart: Revenue by Category
-- Column chart: Revenue by Region
-- Slicers: Year, Region, Category
+## Tools & Technologies
+- Microsoft Excel – Data cleaning and exploration
+- SQL – Data analysis and querying
+- Power BI – Interactive dashboard development
+- DAX – KPI calculations and business metrics
 
-### Page 2 — Product & Region Analysis
-- Bar chart: Top 10 Products by Revenue
-- Matrix: Category and Product with Revenue and Profit
-- Bar chart: Profit by Region
-- Slicers: Year, Category, Region
+## Dataset
+The project uses a synthetic retail sales dataset containing 1,200 order records.
 
-### Page 3 — Sales Representative Performance
-- Bar chart: Revenue by Sales Rep
-- Bar chart: Profit by Sales Rep
-- Table: Sales Rep, Revenue, Profit, Orders, Profit Margin
-- Slicers: Year and Region
+Key columns:
+- Order ID
+- Order Date
+- Customer ID
+- Region
+- Category
+- Product
+- Sales Representative
+- Quantity
+- Unit Price
+- Discount
+- Revenue
+- Cost
+- Profit
 
-## Questions your dashboard should answer
-1. Which year and month generated the most revenue?
-2. Which category and product generated the most revenue?
-3. Which region generated the highest profit?
-4. Which sales representative generated the highest revenue?
-5. Is the profit margin healthy across all categories?
-6. What happens to revenue when users filter by region or year?
+## Key Performance Indicators (KPIs)
+1. Total Revenue
+2. Total Profit
+3. Total Orders
+4. Total Quantity Sold
+5. Profit Margin
+6. Average Order Value
 
-## Portfolio note
-The dataset is fictional and generated for learning. Clearly label it as synthetic in your portfolio.
+## Dashboard Pages
+### 1. Executive Overview
+Provides an overview of sales, revenue, profit and monthly trends.
+
+### 2. Product & Region Analysis
+Identifies top-performing products, categories and regions.
+
+### 3. Sales Representative Performance
+Compares revenue, profit and order performance across sales representatives.
+
+## Project Files
+- sales_data.csv
+- sales_data_and_project_guide.xlsx
+- SQL_analysis_queries.sql
+- DAX_measures.txt
+
+## Business Questions
+- Which products generate the highest revenue?
+- Which region performs best?
+- Which category generates the highest profit?
+- How does revenue change over time?
+- Which sales representative performs best?
+
+## Learning Outcomes
+This project demonstrates practical skills in data cleaning, SQL querying, KPI development, DAX calculations, data visualisation and business analysis.
+
+**Note:** This project uses fictional data created for educational and portfolio purposes.
+
+
