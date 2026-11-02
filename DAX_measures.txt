@@ -1,0 +1,24 @@
+-- Create these measures in Power BI (Modeling > New measure)
+
+Total Revenue = SUM(Sales[Revenue])
+
+Total Profit = SUM(Sales[Profit])
+
+Total Orders = DISTINCTCOUNT(Sales[Order_ID])
+
+Total Quantity = SUM(Sales[Quantity])
+
+Profit Margin = DIVIDE([Total Profit], [Total Revenue], 0)
+
+Average Order Value = DIVIDE([Total Revenue], [Total Orders], 0)
+
+Average Discount = AVERAGE(Sales[Discount])
+
+-- Optional time intelligence (requires a proper Date table)
+Revenue Previous Year =
+CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))
+
+Revenue YoY % =
+DIVIDE([Total Revenue] - [Revenue Previous Year], [Revenue Previous Year], 0)
+
+-- Top products can be shown using a visual-level Top N filter on [Total Revenue].
